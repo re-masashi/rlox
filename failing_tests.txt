@@ -1,0 +1,208 @@
+=== all ===
+
+FAIL test/assignment/grouping.lox
+     Unexpected error:
+     [2] Error at '=': Expected ';' after value
+     Missing expected error: [2] Error at '=': Invalid assignment target
+
+
+FAIL test/class/local_reference_self.lox
+     Unexpected output on stderr:
+     Undefined variable 'Foo'
+     Unexpected output on stderr:
+     [line 4] in returnSelf
+     Unexpected output on stderr:
+     [line 8] in script
+     Expected return code 0 and got 70. Stderr:
+     Undefined variable 'Foo'
+     [line 4] in returnSelf
+     [line 8] in script
+     Missing expected output '<class 0>' on line 8.
+
+
+FAIL test/closure/assign_to_closure.lox
+     Unexpected output on stderr:
+     Undefined variable 'local'
+     Unexpected output on stderr:
+     [line 7] in f_
+     Unexpected output on stderr:
+     [line 21] in script
+     Expected return code 0 and got 70. Stderr:
+     Undefined variable 'local'
+     [line 7] in f_
+     [line 21] in script
+     Missing expected output 'local' on line 22.
+     Missing expected output 'after f' on line 23.
+     Missing expected output 'after f' on line 26.
+     Missing expected output 'after g' on line 27.
+
+
+FAIL test/closure/closed_closure_in_function.lox
+     Unexpected output on stderr:
+     Undefined variable 'local'
+     Unexpected output on stderr:
+     [line 6] in f_
+     Unexpected output on stderr:
+     [line 11] in script
+     Expected return code 0 and got 70. Stderr:
+     Undefined variable 'local'
+     [line 6] in f_
+     [line 11] in script
+     Missing expected output 'local' on line 11.
+
+
+FAIL test/closure/nested_closure.lox
+     Expected output 'c' on line 25 and got 'b'.
+
+
+FAIL test/closure/open_closure_in_function.lox
+     Unexpected output on stderr:
+     Undefined variable 'local'
+     Unexpected output on stderr:
+     [line 4] in f
+     Unexpected output on stderr:
+     [line 6] in script
+     Expected return code 0 and got 70. Stderr:
+     Undefined variable 'local'
+     [line 4] in f
+     [line 6] in script
+     Missing expected output 'local' on line 4.
+
+
+FAIL test/closure/reference_closure_multiple_times.lox
+     Unexpected output on stderr:
+     Undefined variable 'a'
+     Unexpected output on stderr:
+     [line 6] in f_
+     Unexpected output on stderr:
+     [line 12] in script
+     Expected return code 0 and got 70. Stderr:
+     Undefined variable 'a'
+     [line 6] in f_
+     [line 12] in script
+     Missing expected output 'a' on line 13.
+     Missing expected output 'a' on line 14.
+
+
+FAIL test/closure/reuse_closure_slot.lox
+     Unexpected output on stderr:
+     Undefined variable 'a'
+     Unexpected output on stderr:
+     [line 6] in f_
+     Unexpected output on stderr:
+     [line 14] in script
+     Expected return code 0 and got 70. Stderr:
+     Undefined variable 'a'
+     [line 6] in f_
+     [line 14] in script
+     Missing expected output 'a' on line 14.
+
+
+FAIL test/closure/shadow_closure_with_local.lox
+     Unexpected output on stderr:
+     Undefined variable 'foo'
+     Unexpected output on stderr:
+     [line 5] in f
+     Unexpected output on stderr:
+     [line 11] in script
+     Expected return code 0 and got 70. Stderr:
+     Undefined variable 'foo'
+     [line 5] in f
+     [line 11] in script
+     Missing expected output 'closure' on line 5.
+     Missing expected output 'shadow' on line 7.
+     Missing expected output 'closure' on line 9.
+
+
+FAIL test/closure/unused_later_closure.lox
+     Unexpected output on stderr:
+     Undefined variable 'a'
+     Unexpected output on stderr:
+     [line 15] in returnA
+     Unexpected output on stderr:
+     [line 27] in script
+     Expected return code 0 and got 70. Stderr:
+     Undefined variable 'a'
+     [line 15] in returnA
+     [line 27] in script
+     Missing expected output 'a' on line 27.
+
+
+FAIL test/for/closure_in_body.lox
+     Unexpected output on stderr:
+     Undefined variable 'i'
+     Unexpected output on stderr:
+     [line 8] in f
+     Unexpected output on stderr:
+     [line 17] in script
+     Expected return code 0 and got 70. Stderr:
+     Undefined variable 'i'
+     [line 8] in f
+     [line 17] in script
+     Missing expected output '4' on line 17.
+     Missing expected output '1' on line 18.
+     Missing expected output '4' on line 19.
+     Missing expected output '2' on line 20.
+     Missing expected output '4' on line 21.
+     Missing expected output '3' on line 22.
+
+
+FAIL test/for/scope.lox
+     Unexpected output on stderr:
+     Operands must be numbers
+     Unexpected output on stderr:
+     [line 5] in script
+     Expected return code 0 and got 70. Stderr:
+     Operands must be numbers
+     [line 5] in script
+     Missing expected output '0' on line 6.
+     Missing expected output '-1' on line 10.
+     Missing expected output 'after' on line 20.
+     Missing expected output '0' on line 24.
+
+
+FAIL test/function/local_recursion.lox
+     Unexpected output on stderr:
+     Undefined variable 'fib'
+     Unexpected output on stderr:
+     [line 4] in fib
+     Unexpected output on stderr:
+     [line 7] in script
+     Expected return code 0 and got 70. Stderr:
+     Undefined variable 'fib'
+     [line 4] in fib
+     [line 7] in script
+     Missing expected output '21' on line 7.
+
+
+FAIL test/string/unterminated.lox
+     Unexpected output on stderr:
+     [Line 2] Error: Unterminated string
+     Missing expected error: [2] Error: Unterminated string
+
+
+FAIL test/variable/shadow_and_local.lox
+     Expected output 'inner' on line 6 and got 'outer'.
+
+
+FAIL test/variable/shadow_local.lox
+     Expected output 'shadow' on line 5 and got 'local'.
+
+
+FAIL test/while/closure_in_body.lox
+     Unexpected output on stderr:
+     Undefined variable 'j'
+     Unexpected output on stderr:
+     [line 8] in f
+     Unexpected output on stderr:
+     [line 17] in script
+     Expected return code 0 and got 70. Stderr:
+     Undefined variable 'j'
+     [line 8] in f
+     [line 17] in script
+     Missing expected output '1' on line 17.
+     Missing expected output '2' on line 18.
+     Missing expected output '3' on line 19.
+
+
+224 tests passed. 17 tests failed.

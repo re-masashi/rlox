@@ -1,0 +1,5 @@
+{
+  class A {}
+  class B < A {} // Todo: change this print to actually print the class name
+  print B; // expect: <class 1>
+}

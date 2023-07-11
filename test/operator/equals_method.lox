@@ -1,0 +1,18 @@
+// Bound methods have identity equality
+class Foo {
+  method() {}
+}
+
+var foo = Foo();
+var fooMethod = foo.method;
+
+// Same bound method
+print fooMethod == fooMethod; // expect: true
+
+// Identical bound values because it's the same instance + method
+print foo.method == foo.method; // expect: true
+
+var foo_2 = Foo();
+
+// Same method, different instances
+print foo.method == foo_2.method; // expect: false

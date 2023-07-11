@@ -1,0 +1,7 @@
+class Base {
+  foo() {
+    super.doesNotExist; // Error at 'super': Cannot use keyword 'super' in a class which does not inherit a class
+  }
+}
+
+Base().foo();

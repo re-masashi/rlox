@@ -1,0 +1,7 @@
+fun simple(x) {
+    print x;
+    return x + 1;
+}
+
+print simple(1);
+// print simple;

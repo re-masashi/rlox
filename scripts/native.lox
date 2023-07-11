@@ -1,0 +1,2 @@
+var x = radians(90);
+print("sin 90 degrees: "+sin(x));

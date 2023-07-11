@@ -1,0 +1,20 @@
+class Outer {
+  method() {
+    print this; // expect: <pointer 0> to <instance Outer>
+
+    fun f() {
+      print this; // expect: <pointer 0> to <instance Outer>
+
+      class Inner {
+        method() {
+          print this; // expect: <pointer 2> to <instance Inner>
+        }
+      }
+
+      Inner().method();
+    }
+    f();
+  }
+}
+
+Outer().method();

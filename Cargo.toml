@@ -1,0 +1,17 @@
+[package]
+name = "rlox"
+version = "0.1.0"
+authors = ["Nafi"]
+edition = "2018"
+
+[lib]
+name = "rlox"
+path = "src/lib.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dev-dependencies]
+criterion = "*"
+
+[[bench]]
+name = "benches"
+harness = false

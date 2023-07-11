@@ -1,0 +1,15 @@
+class Array{
+	init() {
+		this.__array_data = __array();
+	}
+	get(index){
+		return __array_index_get(index, this.__array_data);
+	}
+	set(index, value){
+		this.__array_data = __array_index_set(index, this.__array_data, value);
+		return value;
+	}
+	array(){
+		return this.__array_data;
+	}
+}

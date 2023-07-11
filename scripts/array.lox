@@ -1,0 +1,11 @@
+
+print "I work. *Phew*!";
+
+var my_array = Array();
+my_array.set(0, "1~");
+my_array.set(1, "2~");
+var my_len = len(my_array.array());
+print "array length "+  my_len; // expect 2
+
+for(var i=1; i<=10; i=i+1)
+	print i+" sheep";

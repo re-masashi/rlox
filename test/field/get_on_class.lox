@@ -1,0 +1,2 @@
+class Foo {}
+Foo.bar; // expect runtime error: Only class instances can access properties with '.' Found <class 0> instead
