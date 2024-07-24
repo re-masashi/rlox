@@ -12,7 +12,7 @@ fn main() {
     if args.len() >= 2 {
         let debug = (args.len() == 3) && args[2].eq("--debug");
         let stdlib = (args.len() == 3) && args[2].eq("--stdlib");
-        println!("stdlib {}", stdlib);
+        // println!("stdlib {}", stdlib);
         let result = run_file(args.get(1).unwrap(), debug, stdlib);
         exit(match result {
             InterpretResult::InterpretOK => 0,
